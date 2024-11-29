@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reqeust Book</title>
+    <link rel="stylesheet" href="rb_style.css"> </head>
+    
+<body>
+    <header>
+        <div class="logo">
+            <img src="bookhaven.png" alt="Book Haven Logo">
+            <h1>eLibrary: Online borrowing management system</h1>
+        </div>
+
+        <nav class ="navbar">
+            <a href="My Request Book.html">My Request Book</a>
+            <a href="Book Record.html">My Book Record</a>
+            <select id="account" onchange="navigateToPage(this)">
+                <option value="" disabled selected>Account</option>
+                <option value="My Account.html">My Account</option>
+                <option value="log-out.html">Log-Out</option>
+            </select>
+            
+            <script>
+                function navigateToPage(select) {
+                    let value = select.value;
+                    if (value) {  // Only navigate if there's a valid value
+                        window.open(value, '_self');
+                    }
+                }
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <body>
+            <h1>My Request Book</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Book Name</th>
+                        <th>Book Author</th>
+                        <th>Genre</th>
+
+                        <th>Request Book</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><img src="book1.jpg" alt="Book 1"></td>
+                        <td>The Boy with the tiger heart</td>
+                        <td>Linda Coggin</td>
+                        <td>Fantasy</td>
+                        <td><button>Request Book</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="book2.jfif" alt="Book 2"></td>
+                        <td>A Million to one</td>
+                        <td>Tony Faggioli</td>
+                        <td>Others</td>
+                        <td><button>Request Book</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="book3.jfif" alt="Book 3"></td>
+                        <td>The Bear & The  Hare</td>
+                        <td>Arweed Gill</td>
+                        <td>Fantasy</td>
+                        <td><button>Request Book</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="book4.jfif" alt="Book 4"></td>
+                        <td>The Wicked King</td>
+                        <td>Holly Black</td>
+                        <td>Others</td>
+                        <td><button>Request Book</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="book5.jfif" alt="Book 5"></td>
+                        <td>The Innovation Paradigm</td>
+                        <td>Taylor Avery</td>
+                        <td>other</td>
+                        <td><button>Request Book</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </main>
+
+    <footer>
+        </footer>
+</body>
+</html>

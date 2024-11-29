@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Record</title>
+    <link rel="stylesheet" href="br_style.css"> </head>
+    
+<body>
+    <header>
+        <div class="logo">
+            <img src="bookhaven.png" alt="Book Haven Logo">
+            <h1>eLibrary: Online borrowing management system</h1>
+        </div>
+
+        <nav class ="navbar">
+            <a href="My Request Book.html">My Request Book</a>
+            <a href="Book Record.html">My Book Record</a>
+
+            <select id="account" onchange="navigateToPage(this)">
+                <option value="" disabled selected>Account</option>
+                <option value="My Account.html">My Account</option>
+                <option value="log-out.html">Log-Out</option>
+            </select>
+            
+            <script>
+                function navigateToPage(select) {
+                    let value = select.value;
+                    if (value) {  // Only navigate if there's a valid value
+                        window.open(value, '_self');
+                    }
+                }
+            </script>
+
+        </nav>
+    </header>
+
+    <main>
+        <body>
+            <h1>Book Record</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Book Name</th>
+                        <th>Issued Date</th>
+                        <th>Return Date</th>
+                        <th>Penalty</th>
+                        <th>Return Book</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Maria Leonora</td>
+                        <td>The Boy with the tiger heart</td>
+                        <td>11/20/2024</td>
+                        <td>12/03/2024</td>
+                        <td>N/A</td>
+                        <td><button>Return Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Maria Leonora</td>
+                        <td>A Million to one</td>
+                        <td>11/15/2024</td>
+                        <td>11/30/2024</td>
+                        <td>N/A</td>
+                        <td><button>Return Book</button></td>
+                    </tr>
+                    
+                </tbody>
+</table>
+
+               
+    </main>
+
+    <footer>
+        </footer>
+</body>
+</html>

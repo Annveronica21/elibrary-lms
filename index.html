@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"> </head>
+    
+<body>
+    <header>
+        <div class="logo">
+            <img src="bookhaven.png" alt="Book Haven Logo">
+            <h1>eLibrary: Online borrowing management system</h1>
+        </div>
+
+        <nav class ="navbar">
+            <a href="My Request Book.html">My Request Book</a>
+            <a href="Book Record.html">My Book Record</a>
+            <select id="account" onchange="window.open(this.value,'_self');">
+                <option value="My Account.html">My Account</option>
+                <option value="log-out.html">Log-Out</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <div class="account-container">
+    
+            <div class="account-header">My Account</div>
+            <div class="account-details">
+                <p>Person Name: <span>Maria Leonora</span></p>
+                &nbsp;
+                <p>Person Email: <span>MariaL@gmail.com</span></p>
+                &nbsp;
+                <p>Account Type: <span>student</span></p>
+            </div>
+        </div>
+    
+        </main>
+    
+
+   
+
+    <footer>
+        </footer>
+</body>
+</html>

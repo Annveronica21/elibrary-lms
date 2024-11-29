@@ -1,0 +1,102 @@
+body {
+    font-family: inherit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ccc;
+    padding: 20px;
+}
+.navbar {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px; /* Adds 20px of space between elements */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#account {
+    appearance: none; /* Removes default browser styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    /* Add your desired font family and color here */
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+    /* Create the three-dot icon */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+DQoJCQk8cGF0aCBkPSJNMCAwaDYgSDZWMHoiLz4NCgkJPHBhdGggZD0iTTkgMGg2VjZIM3oiLz4NCgkJPHBhdGggZD0iTTIgMTBoNlgxNkgzWi8+DQoJPC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+nav {
+    float: right;
+}
+
+nav select, nav a {
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+main{
+    padding: 150px;
+}
+
+.account-container {
+    background-color: #e3eae3; /* Light grayish background */
+    border: 1px solid #434343;     /* Border around the container */
+    padding: 40px;
+    width: 500px;                /* Adjust width as needed */
+    margin: 20px auto;           /* Centers the container horizontally and adds margin from the top */
+    text-align: center;          /* Centers text inside the container */
+    border-radius: 10px;         /* Rounded corners */
+}
+
+.account-header {
+    background-color: #D3D3D3; /* Gray header background */
+    padding: 10px;
+    text-align: center;
+}
+
+.account-details {
+    margin-top: 20px;
+}
+
+.account-details p {
+    margin: 5px 0;
+}
+
+.account-details span {
+    font-weight: bold;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
